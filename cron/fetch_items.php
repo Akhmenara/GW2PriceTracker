@@ -1,6 +1,7 @@
 <?php
 
-$config = include($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+$dirname = dirname(dirname(__FILE__));
+$config = include($dirname . '/config.php');
 $base_url = "https://api.guildwars2.com/v2/";
 $price_url = "commerce/prices";
 $items_url = "items/";
